@@ -2,8 +2,8 @@ require("dotenv").config();
 
 module.exports = {
   port: process.env.PORT || 3000,
-  //   dbUri: process.env.MONGO_URI,
-  connectionstring: process.env.CONNECTION_STRING,
+  dbUri: process.env.MONGO_URI,
+  // connectionstring: process.env.CONNECTION_STRING,
   jwtSecret: process.env.JWT_SECRET,
   otpExpiry: 10 * 60 * 1000, // 10 minutes
   otpLength: 6,

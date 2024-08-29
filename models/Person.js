@@ -10,6 +10,7 @@ const PersonSchema = new mongoose.Schema({
   occupation: String,
   guardianPhoneNumber: String,
   guardianName: String,
+  doctor: String,
   medicalInfo: {
     height: String,
     weight: String,
@@ -26,11 +27,7 @@ const PersonSchema = new mongoose.Schema({
     dataUsage: Boolean,
     privacyAgreement: Boolean,
   },
-  hmoDetails: {
-    hasHMO: Boolean,
-    hmoProvider: String,
-    hmoId: String,
-  },
+
   otp: {
     code: String,
     expiresAt: { type: Date, default: Date.now, index: { expires: "10m" } },
