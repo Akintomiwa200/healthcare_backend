@@ -10,7 +10,7 @@ const app = express();
 
 
 const corsOptions = {
-  origin: *, 
+  origin: "*", 
   methods: "GET, POST, PUT, DELETE, OPTIONS",
   allowedHeaders: ["Content-Type", "Authorization"], 
   credentials: true,
@@ -18,7 +18,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions)); 
 
-app.options("*", cors(corsOptions)); 
+app.options(https://healthcare-backend-tdsu.onrender.com/api/auth/signup, cors(corsOptions)); 
 
 
 app.use(express.json());
