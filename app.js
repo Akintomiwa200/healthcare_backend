@@ -18,7 +18,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions)); 
 
-app.options(https://healthcare-backend-tdsu.onrender.com/api/auth/signup, cors(corsOptions)); 
+app.options("*", cors(corsOptions)); 
 
 
 app.use(express.json());
